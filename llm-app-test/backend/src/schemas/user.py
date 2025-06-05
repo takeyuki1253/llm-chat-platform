@@ -1,4 +1,4 @@
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 from uuid import UUID
 from pydantic import BaseModel, EmailStr
 from datetime import datetime
@@ -66,6 +66,7 @@ class TokenResponse(BaseModel):
 class ApiKeysUpdate(BaseModel):
     openai: Optional[str] = None
     google: Optional[str] = None
+    google_models: Optional[List[str]] = None
     anthropic: Optional[str] = None
 
 

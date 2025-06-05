@@ -31,6 +31,13 @@ class Settings(BaseSettings):
     GOOGLE_API_KEY: Optional[str] = None
     ANTHROPIC_API_KEY: Optional[str] = None
     
+    GOOGLE_VERTEX_MODELS: List[str] = [
+        "gemini-pro",
+        "gemini-pro-vision", 
+        "gemini-1.5-pro",
+        "gemini-1.5-flash"
+    ]
+    
     # Rate Limiting
     RATE_LIMIT_PER_MINUTE: int = 60
     
