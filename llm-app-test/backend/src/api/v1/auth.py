@@ -109,6 +109,8 @@ async def update_api_keys(
         updated_keys["openai"] = api_keys.openai
     if api_keys.google is not None:
         updated_keys["google"] = api_keys.google
+    if api_keys.google_models is not None:
+        updated_keys["google_models"] = api_keys.google_models
     if api_keys.anthropic is not None:
         updated_keys["anthropic"] = api_keys.anthropic
     
